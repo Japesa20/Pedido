@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Teste de Compatibilidade</title>
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background:#ffebf2;
+    text-align:center;
+    padding:40px;
+}
+button{
+    padding:15px 30px;
+    margin:10px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+.sim{
+    background:#ff4081;
+    color:white;
+}
+</style>
+</head>
+<body>
+
+<h1>💖 Teste de Compatibilidade 💖</h1>
+
+<p>Analisando...</p>
+
+<script>
+setTimeout(() => {
+document.body.innerHTML = `
+<h1>❤️ Compatibilidade: 100% ❤️</h1>
+<h2>Agora só falta uma resposta...</h2>
+<h1>Você aceita namorar comigo? 💍</h1>
+
+<button class="sim" onclick="alert('Sabia que você ia dizer SIM! ❤️')">
+SIM
+</button>
+
+<button onclick="this.style.position='absolute';
+this.style.left=Math.random()*80+'%';
+this.style.top=Math.random()*80+'%';">
+NÃO
+</button>
+`;
+},3000);
+</script>
+
+</body>
+</html>
